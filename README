@@ -1,0 +1,54 @@
+# Overview
+Pfinder is an application to sort unsorted boarding passes using quick sort algorithm
+
+## Software Requirements
+* PHP 5.4+ (php-cli)
+* Phpunit
+
+## Assumptions :
+-------------
+
+- The input data is an unsorted array.
+- Each array item represents a boarding pass with corresponding values as per mode of transportation
+- Source and destination points are strings without any special characters
+	
+// sample input : 
+	[
+		'source' => 'mardrid',
+		'destination' => 'barcelona',
+		'mode_of_transport' => 'train',
+		'transport_details' => [
+			'seat_no'	=> '122',
+			'train' => 'MD2',
+			'platform' => '5'
+		]
+	],
+	[
+		'source' => 'gerona',
+		'destination' =>  'stockholm',
+		'mode_of_transport' => 'flight',
+		'transport_details' => [
+			'seat_no' => '12E',
+			'gate' => '45A',
+			'flight' => 'AI123'
+		]
+	],
+
+
+
+## Test case execution :
+----------------------
+- Testcases are loaded in /Test/SorterTest class
+- phpunit.phar (version 6.5.7) is added as library to run unit tests.
+
+Run testcases :
+	$ php phpunit.phar 
+
+For coverage 
+	$ php phpunit.phar --coverage-html="coverage"
+
+
+Code Execution :
+-------------------
+From the command line in the application root directory RUN : 
+	php index.php

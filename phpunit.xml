@@ -1,0 +1,15 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="sorter">
+      <file>Test/SorterTest.php</file>
+    </testsuite>
+  </testsuites>
+  <filter>
+  <whitelist processUncoveredFilesFromWhitelist="false">
+    <directory suffix=".php">.</directory>
+    <exclude>
+      <directory suffix=".php">Test</directory>
+    </exclude>
+  </whitelist>
+</filter>
+</phpunit>
